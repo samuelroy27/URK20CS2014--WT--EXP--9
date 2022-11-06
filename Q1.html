@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js" type="text/javascript">
+      </script>
+    </head>
+    
+    <body ng-app="" style="color: black;">
+        <div style="position: left ;">
+            <h1><u>CHRISTMAS MEGAPLAY'22 REGISTRATION FORM</u></h1>
+            <form name='myform'>
+                Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type='text' name="myName" ng-model="name" required pattern="[a-z,A-Z]{1,}">
+                <br>
+                <br>
+ 
+                Register Number  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type='test' name="myreg" ng-model="reg">
+                <br>
+                <br>
+ 
+                Year of Study &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type='radio' name="myyear" ng-model="year" value="1st" required>1st
+                    <input type='radio' name="myyear" ng-model="year" value="2nd" required>2nd
+                    <input type='radio' name="myyear" ng-model="year" value="3rd" required>3rd
+                    <input type='radio' name="myyear" ng-model="year" value="4th" required>4th
+                <br>
+                <br>
+                
+                Age &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type='number' name="myAge" ng-model="Age" required min="18" max="30">           
+                <br>
+                <br>
+ 
+                Mobile Number &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type='tel' name="mynumber" ng-model="Number" required pattern="[0-9]{10}">
+                <br>
+                <br>
+ 
+                Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type='email' name="myemail" ng-model="email" required>
+                <br>
+                <br>
+ 
+                Gender &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type='radio' name="mygender" ng-model="Gender" value="Male" required>Male
+                    <input type='radio' name="mygender" ng-model="Gender" value="Female" required>Female
+                <br>
+                <br>
+ 
+                Activity &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select name="myactivity" ng-model="activity" required>
+                        <option value="Dance">Dance</option>
+                        <option value="Choir">Choir</option>
+                        <option value="Background">Properties and Backdrop</option>
+                        <option value="Acting">Acting</option>
+                    </select>
+                <br>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="button">Register</button>
+            </form>    
+        </div>
+    </body>
+</html>
